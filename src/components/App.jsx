@@ -6,6 +6,9 @@ export const App = () => {
     <div>
       <Star/>
       <Counter/>
+
+      
+
       
     </div>
   );
