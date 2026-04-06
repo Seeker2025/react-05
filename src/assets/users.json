@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "bio": "Assumenda harum mollitia neque, officiil veniam repellat sapiente",
+        "skils": ["react", "vue"],
+        "isOpenToWork": false
+    },
+
+    {
+        "id": 2,
+        "name": "Ervin Well",
+        "email": "Shann@elissa.tv",
+        "bio": "Assumenda harum mollitia neque, officiil veniam repellat sapiente",
+        "skils": ["angular"],
+        "isOpenToWork": true
+    },
+
+     {
+        "id": 3,
+        "name": "Clemetine Bauch",
+        "email": "Nathan@yesenia.net",
+        "bio": "Assumenda harum mollitia neque, officiil veniam repellat sapiente",
+        "skils": ["react"],
+        "isOpenToWork": false
+    },
+
+    {
+        "id": 4,
+        "name": "Patricia Lebsack",
+        "email": "Lebsack@leb.net",
+        "bio": "Assumenda harum mollitia neque, officiil veniam repellat sapiente",
+        "skils": ["react", "vue"],
+        "isOpenToWork": true
+    }
+]
