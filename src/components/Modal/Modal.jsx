@@ -1,15 +1,22 @@
-export const Modal = ({children})=>{
+import css from './Modal.module.css';
+
+export const Modal = ({children, onClose})=>{
     return(
         <>
-            <div className="modal-backdrop"/>
-                <div  className="modal" style={{ display: 'block' }}>
+            <div className={css.modalBackdrop}/>
+                <div  className={css.modal} style={{ display: 'block' }}>
                     <div  className="modal-content">
                         <div  className="modal-header">
                             <h5 className="modal-title">
-                                Modal title
+                                Create new user
                             </h5>
 
-                            <button type="button" className="btn-close" aria-lanel="Close"/>
+                            <button
+                             type="button"
+                             className="btn-close"
+                             aria-label="Close"
+                             onClick={onClose}
+                             />
 
                         </div>   
 

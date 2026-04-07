@@ -1,3 +1,5 @@
+import css from './Users.module.css';
+
 export const UsersItem = ({ user, onDelete }) =>{
     const { id, name, email, bio, skils, isOpenToWork } = user;
 
@@ -8,7 +10,7 @@ export const UsersItem = ({ user, onDelete }) =>{
     }
 
     return (
-        <div className="card">
+        <div className={css.card}>
             <div className="card-body">
                 <h5 className="card-title">
                     {name}
