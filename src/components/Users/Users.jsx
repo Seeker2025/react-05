@@ -35,11 +35,13 @@ export class Users extends Component{
                 <NewUserForm/>
             </Modal> */}
 
-             {isModalOpen && (<Modal
+             {isModalOpen && (
+                            <Modal
              onClose={this.handleToggle}
              >
-                    <NewUserForm/> 
-             </Modal>
+                                        <NewUserForm/> 
+
+                            </Modal>
             )}
 
             <button

@@ -1,6 +1,18 @@
 import css from '../../Users.module.css';
+import { Component } from 'react';
 
-export const Availability = () => {
+export class Availability extends Component{
+
+    // state ={
+    //     isOpenToWork: false,
+    // };
+
+    // handleChange = ()=>{
+    //     this.setState(prevState=>({ isOpenToWork: !prevState.isOpenToWork }))
+    // };
+
+    render(){
+        const { isOpenToWork, onChange } = this.props;
     return (
         <fieldset className="mt-3">
 
@@ -11,7 +23,12 @@ export const Availability = () => {
             <label className="form-check-label">
 
                 <span >Is open to work</span>
-                <input className={css.formInputCheckbox} type="checkbox"/>
+                <input
+                className={css.formInputCheckbox}
+                type="checkbox"
+                checked={isOpenToWork}
+                onChange={onChange}
+                />
 
 
             </label>
@@ -20,4 +37,6 @@ export const Availability = () => {
             
         </fieldset>
     )
+    }
+
 }

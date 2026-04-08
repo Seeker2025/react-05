@@ -30,9 +30,13 @@ export class NewUserForm extends Component{
         
     }
 
+    handleChangeOpenToWork = () => {
+        this.setState(prevState=>({ isOpenToWork: !prevState.isOpenToWork }))
+    };
+
     render(){
 
-        const { name, email, bio } = this.state;
+        const { name, email, bio, isOpenToWork } = this.state;
 
         return(
             <form>      
@@ -44,7 +48,10 @@ export class NewUserForm extends Component{
                       bio = {bio}
                       />
 
-                     <Availability/>
+                     <Availability
+                     isOpenToWork = {isOpenToWork}
+                     onChange = {this.handleChangeOpenToWork}
+                     />
 
                      <Skills/>  
 
