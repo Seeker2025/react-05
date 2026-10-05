@@ -2,9 +2,10 @@
 button.primary{
     background-color: rgb(41, 122, 252);
     width: 100px;
-    color: #fff;
+    color: #ffffff;
     border-radius: 4px;
     height: 40px;
+    margin-top: 0;
 }
 .control{
     width: 300px;

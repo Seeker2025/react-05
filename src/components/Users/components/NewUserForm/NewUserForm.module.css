@@ -1,0 +1,13 @@
+.btn{
+    background-color: rgb(20, 98, 233);
+    margin: 3px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 0;
+    border: none;
+}
+
+.dFlex{
+    display: flex;
+    flex-direction: column;
+}

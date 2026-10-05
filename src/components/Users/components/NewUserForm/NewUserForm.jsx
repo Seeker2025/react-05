@@ -4,6 +4,8 @@ import { GeneralInfo } from './components/GeneralInfo';
 import { Availability } from './components/Availability';
 import { Skills } from "./components/Skills";
 
+import  css from './NewUserForm.module.css';
+
 // {
 //         "id": 1,
 //         "name": "Leanne Graham",
@@ -55,11 +57,11 @@ export class NewUserForm extends Component{
 
                      <Skills/>  
 
-                    <div className="d-flex">
+                    <div className={css.dFlex}>
 
-                        <button type="button" className="btn">Cancel</button>
+                        <button type="button" className={css.btn}>Cancel</button>
 
-                        <button type="submit" className="btn">Create user</button>
+                        <button type="submit" className={css.btn}>Create user</button>
 
                     </div>
             </form>
